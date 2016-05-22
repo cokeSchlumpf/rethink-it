@@ -1,4 +1,6 @@
-The [IBM WebSphere Application Server Liberty Buildpack](https://github.com/cloudfoundry/ibm-websphere-liberty-buildpack) is used to deploy Liberty applications to Bluemix and other Cloud Foundry-based platforms. The Liberty buildpack deploys compiled artifacts such as .war or .ear files, server packages (.zip files), or server directories. In combination with the [cloudfoundry-maven-plugin](https://github.com/cloudfoundry/cf-java-client/tree/master/cloudfoundry-maven-plugin) and the [liberty-maven-plugin](https://github.com/WASdev/ci.maven) you're able to integrate all build, test and deployment steps with Maven. 
+# Deploying JEE Apps to Bluemix using WAS Liberty
+
+The [IBM WebSphere Application Server Liberty Buildpack](https://github.com/cloudfoundry/ibm-websphere-liberty-buildpack) is used to deploy Liberty applications to Bluemix and other Cloud Foundry-based platforms. The Liberty buildpack deploys compiled artifacts such as .war or .ear files, server packages (.zip files), or server directories. In combination with the [cloudfoundry-maven-plugin](https://github.com/cloudfoundry/cf-java-client/tree/master/cloudfoundry-maven-plugin) and the [liberty-maven-plugin](https://github.com/WASdev/ci.maven) you're able to integrate all build, test and deployment steps with Maven.
 
 This blog post will show how you can setup the Liberty Profile Server, run and test your application on it, create a packaged server and deploy it to Bluemix - All done with Maven.
 
@@ -167,7 +169,7 @@ The cloud foundry maven plugin enables Maven to execute all commands you would u
       <IBM_LIBERTY_LICENSE>${ibm.liberty.license}</IBM_LIBERTY_LICENSE>
     </env>
     <!-- End -->
-    
+
     <path>${project.build.directory}/${project.name}-server.zip</path>
     <server>bluemix</server>
     <target>https://api.ng.bluemix.net</target>
