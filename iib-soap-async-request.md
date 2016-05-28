@@ -2,6 +2,8 @@
 
 In my current project I'm using the SOAPAsyncRequest Node to call a backend WebService. I was struggling a few hours to find out how I could transfer user context data from the request to the response flow.
 
+---
+
 A look to the [specification](http://www-01.ibm.com/support/knowledgecenter/SSMKHH_9.0.0/com.ibm.etools.mft.doc/ac56202_.htm) tells us that there is a property `UserContext` we can use to transfer context data. But one important information is missing: Only `BLOB` values are allowed (at least the error message tells you if you set anything else).
 
 After I found out that restriction the big fight begun: How do I cast my data structure to a `BLOB` value and vice versa? After a lot of googling and playing around with ESQL I found the following solution:
