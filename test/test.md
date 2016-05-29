@@ -10,3 +10,5 @@ Das hier ist der nächste Abschnitt.
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+
+**Lorem ipsum** dolor sit amet.
