@@ -803,3 +803,19 @@ body.post-template .site-header h2 .logo {
 
 .clearfix:after {
   clear: both; }
+
+div.wrapper {
+  min-height: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+footer.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+div.content {
+  padding-bottom: 80px;
+}
