@@ -819,3 +819,8 @@ footer.main-footer {
 div.content {
   padding-bottom: 80px;
 }
+
+#app {
+  height: 100%;
+  width: 100%;
+}
