@@ -1,8 +1,12 @@
 div
-  .site-header
+  header.site-header
     h2
-      a(class="logo ir" href="#")= blog.title
-    p
-     | Hello World!
-   each post in posts
-     h3= post.title
+      a(class="logo ir" href=blog.url)= blog.title
+
+  .content= content
+
+  foot.main-footer
+    .container.clearfix
+      p
+       | All content copyright Michael Wellner 2016. All rights reserved.
+       | Proudly published with gh-blog. Theme designed by Raphael Riegger.
