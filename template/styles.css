@@ -805,6 +805,7 @@ body.post-template .site-header h2 .logo {
   clear: both; }
 
 div.wrapper {
+  background-color: #ff0000;
   min-height: 100vh;
   margin-bottom: 50px;
   position: relative;
