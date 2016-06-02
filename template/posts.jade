@@ -3,13 +3,13 @@
     each post in posts
       article.post
         h2
-          a(href="url" title=post.title)= post.title
+          a(href=post.link title=post.title)= post.title
         footer.post-info
           | Posted on #[span.post-meta= post.publishedDate].
 
         p
           != post.contentSnippet
-          a(href="url" title=post.title) Read more &raquo;
+          a(href=post.link title=post.title) Read more &raquo;
 
   aside.author
     img(class="profile-image" src=blog.owner.avatar alt=blog.owner.name)
