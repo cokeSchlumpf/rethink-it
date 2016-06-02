@@ -7,7 +7,7 @@
         footer.post-info
           | Posted on #[span.post-meta= post.publishedDate].
 
-        p
+        div.markdown-body
           != post.contentSnippet
           a(href=post.link title=post.title) Read more &raquo;
 

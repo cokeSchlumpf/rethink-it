@@ -1,3 +1,25 @@
-- var foo = "Hello " + title
-div
-  span= foo
+.container.clearfix.wrapperContent
+  main.content(role="main")
+    article.post
+      a(class="btn" href=blog.url title="Back to home") &laquo; Back to home
+      h1
+        a(href=post.url title=post.title) post.title
+      footer.post-info
+        | Posted on #[span.post-meta= post.publishedDate].
+
+      div.markdown-body
+        != post.contentSnippet
+      div.markdown-body
+        != post.content
+
+      ul.share-buttons
+        li Share this article:
+        li
+          a.icon-facebook-squared.icon-foo(href="..." onClick="..." title="Share on Facebook")
+        li
+          a.icon-twitter.icon-foo(href="..." onClick="...." title="Share on Twitter")
+        li
+          a.icon-linkedin.icon-foo(href="..." onClick="..." title="Share on LinkedIn")
+
+      div.comments
+        h3 Comments
