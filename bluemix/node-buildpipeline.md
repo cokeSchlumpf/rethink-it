@@ -6,7 +6,7 @@ The [Delivery Pipeline](https://console.ng.bluemix.net/catalog/delivery-pipeline
 
 To configure your Build Job select `npm` as Builder Type and use the following shell snippet to easily set up your desired Node version with the help of NVM.
 
-```
+```shell
 #!/bin/bash
 export NVM_DIR=/home/pipeline/nvm
 export NODE_VERSION=5.10.1
