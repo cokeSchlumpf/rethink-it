@@ -9,10 +9,10 @@
           a(href="url" title=post.title) Read more &raquo;
 
   aside.author
-    img(class="profile-image" src=blog.user.avatar alt="Michael Wellner")
+    img(class="profile-image" src=blog.owner.avatar alt=blog.owner.name)
     p.name
       | by
-      strong Michael Wellner
+      strong= blog.owner.name
     p.address
       | Munich, Germany
     p
