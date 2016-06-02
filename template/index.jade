@@ -3,7 +3,24 @@ div.wrapper
     h2
       a(class="logo ir" href=blog.url)= blog.title
 
-  != content
+  .container.clearfix.wrapperContent
+    main.content(role="main")
+      != content
+
+    aside.author
+      img(class="profile-image" src=blog.owner.avatar alt=blog.owner.name)
+      p.name
+        | by&nbsp;
+        strong= blog.owner.name
+      p.address
+        | Munich, Germany
+      p
+        a(href="http://www.michaelwellner.de" title="Michael Wellner") michaelwellner.de
+
+      ul.social
+        li
+          a(class="icon-twitter" href="http://twitter.com/cokeSchlumpf" title="Follow me on Twitter" target="_blank")
+          a(class="icon-github" href="http://github.com/cokeSchlumpf" title="cokeSchlumpf@Github" target="_blank")
 
   footer.main-footer
     .container.clearfix

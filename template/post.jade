@@ -1,17 +1,15 @@
-.container.clearfix.wrapperContent
-  main.content(role="main")
-    article.post
-      h1
-        a(href=post.url title=post.title)= post.title
-      footer.post-info
-        | Posted on #[span.post-meta= post.publishedDate].
+article.post
+  h1
+    a(href=post.url title=post.title)= post.title
+  footer.post-info
+    | Posted on #[span.post-meta= post.publishedDate].
 
-      div.markdown-body
-        != post.contentSnippet
-      div.markdown-body
-        != post.content
+  div.markdown-body
+    != post.contentSnippet
+  div.markdown-body
+    != post.content
 
-    div.comments
-      h3 Comments
+div.comments
+  h3 Comments
 
-  script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57506734d41cd39d")
+script(type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57506734d41cd39d")
