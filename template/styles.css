@@ -557,6 +557,8 @@ hr {
       background-size: 179px 148px; } }
 
 .profile-image {
+  width: 118px;
+  height: 118px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%; }
