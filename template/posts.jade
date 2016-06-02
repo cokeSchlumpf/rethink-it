@@ -1,4 +1,4 @@
-.container.clearfix
+.container.clearfix.wrapperContent
   main.content(role="main")
     each post in posts
       article.post
@@ -8,17 +8,17 @@
           post.contentSnippet
           a(href="url" title=post.title) Read more &raquo;
 
-    aside.author
-      img(class="profile-image" src=blog.user.avatar alt="Michael Wellner")
-      p.name
-        | by
-        strong Michael Wellner
-      p.address
-        | Munich, Germany
-      p
-        a(href="http://www.michaelwellner.de" title="Michael Wellner") michaelwellner.de
+  aside.author
+    img(class="profile-image" src=blog.user.avatar alt="Michael Wellner")
+    p.name
+      | by
+      strong Michael Wellner
+    p.address
+      | Munich, Germany
+    p
+      a(href="http://www.michaelwellner.de" title="Michael Wellner") michaelwellner.de
 
-      ul.social
-        li
-          a(class="icon-twitter" href="http://twitter.com/cokeSchlumpf" title="Follow me on Twitter" target="_blank")
-          a(class="icon-github" href="http://github.com/cokeSchlumpf" title="cokeSchlumpf@Github" target="_blank")
+    ul.social
+      li
+        a(class="icon-twitter" href="http://twitter.com/cokeSchlumpf" title="Follow me on Twitter" target="_blank")
+        a(class="icon-github" href="http://github.com/cokeSchlumpf" title="cokeSchlumpf@Github" target="_blank")
