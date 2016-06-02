@@ -1,6 +1,6 @@
 # How to use a current Node version on IBM DevOps Delivery Pipeline
 
-The [Delivery Pipeline](https://console.ng.bluemix.net/catalog/delivery-pipeline/) on IBM DevOps services let's you automate builds and deployments to IBM Bluemix in a very easy way. Unfortunately its pre-installed node versions are not up to date and you may need a newer version to build your project.
+The [Delivery Pipeline](https://console.ng.bluemix.net/catalog/delivery-pipeline/) on IBM DevOps services let's you automate builds and deployments to IBM Bluemix in a very easy way. Unfortunately its pre-installed Node versions are not up to date and you may need a newer version to build your project.
 
 ---
 
