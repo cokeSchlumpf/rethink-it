@@ -13,18 +13,19 @@ div.wrapper
         | by&nbsp;
         strong= blog.owner.name
       p.address
-        | Munich, Germany
+        | = blog.owner.location
       p
-        a(href="http://www.michaelwellner.de" title="Michael Wellner") michaelwellner.de
+        a(href="http://#{blog.owner.url}" title="blog.owner.name")= blog.owner.url
 
       ul.social
         li
-          a(class="icon-twitter" href="http://twitter.com/cokeSchlumpf" title="Follow me on Twitter" target="_blank")
-          a(class="icon-github" href="http://github.com/cokeSchlumpf" title="cokeSchlumpf@Github" target="_blank")
+          a(class="icon-twitter" href=blog.owner.twitter title="Follow me on Twitter" target="_blank")
+        li
+          a(class="icon-github" href=blog.owner.github title="Visit me on Github" target="_blank")
 
   footer.main-footer
     .container.clearfix
       p
-        | All content copyright #[a(href="http://www.michaelwellner.de") Michael Wellner] 2016. All rights reserved.
+        | All content copyright #[a(href=blog.owner.url)= blog.owner.name] 2016. All rights reserved.
       p
         | Proudly published with gh-blog. Theme designed by #[a(href="http://rriegger.com/") Raphael Riegger].
