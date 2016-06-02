@@ -3,7 +3,7 @@
     article.post
       a(class="btn" href=blog.url title="Back to home") &laquo; Back to home
       h1
-        a(href=post.url title=post.title) post.title
+        a(href=post.url title=post.title)= post.title
       footer.post-info
         | Posted on #[span.post-meta= post.publishedDate].
 
@@ -12,14 +12,13 @@
       div.markdown-body
         != post.content
 
-      ul.share-buttons
-        li Share this article:
-        li
-          a.icon-facebook-squared.icon-foo(href="..." onClick="..." title="Share on Facebook")
-        li
-          a.icon-twitter.icon-foo(href="..." onClick="...." title="Share on Twitter")
-        li
-          a.icon-linkedin.icon-foo(href="..." onClick="..." title="Share on LinkedIn")
+      span.st_twitter(displayText="Tweet")
+      span.st_facebook(displayText="Facebook")
+      span.st_linkedin(displayText="LinkedIn")
 
-      div.comments
-        h3 Comments
+    div.comments
+      h3 Comments
+
+  script(type="text/javascript" src="http://w.sharethis.com/button/buttons.js")
+  script(type="text/javascript")
+    | stLight.options({publisher: "5d5bec7c-769f-4718-b194-65558e3c4774", doNotHash: false, doNotCopy: false, hashAddressBar: false});
