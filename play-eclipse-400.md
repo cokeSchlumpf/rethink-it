@@ -2,7 +2,7 @@
 
 When you're setting up a new Play project with Typesafe Activator your may face the problems I did when opening the project in Eclipse.
 
---
+---
 
 ![Eclipse doesn't know the view objects.](http://wellnr.de/file/rethinkit/play_classpath_error.png)
 
