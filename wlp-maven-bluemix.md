@@ -10,7 +10,7 @@ An alternative approach would be to deploy the source and execute a Maven build 
 
 The sample project which will be used is hosted on [GitHub](https://github.com/cokeSchlumpf/liberty-maven-bluemix-sample). It's a simple application which exposes a JAX-RS WebService to flip a coin:
 
-```prettyprint lang-java
+```java
 @Stateless
 @Path("coin")
 public class CoinService {
@@ -31,7 +31,7 @@ curl http://localhost:9080/ws/coin
 ## Configure Liberty Maven Plugin
 At first the Liberty Maven Plugin must be added to the POM file.
 
-```prettyprint lang-xml
+```xml
 <plugin>
    <groupId>net.wasdev.wlp.maven.plugins</groupId>
    <artifactId>liberty-maven-plugin</artifactId>
@@ -41,7 +41,7 @@ At first the Liberty Maven Plugin must be added to the POM file.
 
 To use the snapshot versions you need to add the Sonatype OSS Maven snapshots repository. Only major releases are published to Maven Central.
 
-```prettyprint lang-xml
+```xml
 <pluginRepositories>
    <pluginRepository>
      <id>sonatype-nexus-snapshots</id>
@@ -59,7 +59,7 @@ To use the snapshot versions you need to add the Sonatype OSS Maven snapshots re
 
 In the configuration section of the plugin you can set several properties to get things done right.
 
-```prettyprint lang-xml
+```xml
 <configuration>
   <install>
     <!-- license code specified in ~/.m2/settings.xml -->
@@ -87,7 +87,7 @@ Let's have a closer look to the configuation:
 
 * In the install section it's necessary to set the Liberty license code. This indicates that you accept the license code during Liberty Profile Server installation. The license code can be found in the [license agreement for the current version](http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/wlp/8.5.5.5/lafiles/runtime/en.html) (The code is at the end after "D/N"). It's a best practice to configure a maven property within your Maven settings.xml.
 
-* The `configFile` property points to the location of your ```server.xml```. This is the place where the configuration for your WLP server is defined (e.g. database configuration, endpoints, security, enabled features,  etc.). Have a look on [GitHub](https://github.com/cokeSchlumpf/liberty-maven-bluemix-sample/blob/master/src/main/wlp/server.xml) for the example ```server.xml```.
+* The `configFile` property points to the location of your `server.xml`. This is the place where the configuration for your WLP server is defined (e.g. database configuration, endpoints, security, enabled features,  etc.). Have a look on [GitHub](https://github.com/cokeSchlumpf/liberty-maven-bluemix-sample/blob/master/src/main/wlp/server.xml) for the example `server.xml`.
 
 * The `packageFile` and the `include` properties are used during the packaging phase of the Maven build. The `include` property is set to `usr` to package only the application and the configuration - Not the whole runtime, since this will be provided by the CF Liberty Buildpack on Bluemix.
 
@@ -97,7 +97,7 @@ Let's have a closer look to the configuation:
 
 Finally the plugin executions must be configured. The `package-server` goal can be bound to the `packaging` phase of the Maven build. To install the liberty profile when it's necessary, the `create-server` goal should be triggered within a profile which checks the presence of the server:
 
-```prettyprint lang-xml
+```xml
 <profiles>
   <profile>
     <id>install-liberty</id>
@@ -133,7 +133,7 @@ A pitfall of this approach is that the server won't be installed when executing 
 
 Now the Maven Liberty plugin is configured to download and install the server during compile time. One more step is needed to deploy the WAR file during the build process, so that you could start the server within the `test` phase to run component tests agains the running server. Just modify the target dir of the Maven WAR plugin:
 
-```prettyprint lang-xml
+```xml
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-war-plugin</artifactId>
@@ -148,7 +148,7 @@ Now the Maven Liberty plugin is configured to download and install the server du
 ## Configure Cloud Foundry Maven Plugin
 The cloud foundry maven plugin enables Maven to execute all commands you would usually do with the Cloud Foundry CLI manually. Let's have a look on its configuration:
 
-```prettyprint lang-xml
+```xml
 <plugin>
   <groupId>org.cloudfoundry</groupId>
   <artifactId>cf-maven-plugin</artifactId>
@@ -199,7 +199,7 @@ The plugin enables you to setup all necessary options to deploy the app on Bluem
 
 * The `server` tag identifies the server id. The authentication properties for the server should be configured within your Maven settings.xml.
 
-```prettyprint lang-xml
+```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>

@@ -10,7 +10,7 @@ After I found out that restriction the big fight begun: How do I cast my data st
 
 To set the UserContext you could do something like that:
 
-```prettyprint lang-sql
+```sql
 SET EVarRef.UserContext.ReplyToQ = InputRoot.MQMD.ReplyToQ;
 SET EVarRef.UserContext.MessageId = InputRoot.MQMD.MsgId;
 
@@ -24,7 +24,7 @@ SET OutputLocalEnvironment.Destination.SOAP.Request.UserContext = EVarRef.UserCo
 
 To get back the UserContext into your environment within your SOAPAsyncResponse-Flow you can do that:
 
-```prettyprint lang-sql
+```sql
 CREATE LASTCHILD OF EVarRef.UserContext DOMAIN('XMLNSC') NAME 'XMLNSC';
 DECLARE ptrBitstream REFERENCE TO InputLocalEnvironment.SOAP.Response.UserContext;
 
