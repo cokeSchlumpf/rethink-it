@@ -4,6 +4,8 @@ The [IBM WebSphere Application Server Liberty Buildpack](https://github.com/clou
 
 This blog post will show how you can setup the Liberty Profile Server, run and test your application on it, create a packaged server and deploy it to Bluemix - All done with Maven.
 
+--
+
 An alternative approach would be to deploy the source and execute a Maven build on the Bluemix server using the [Heroku buildpack for Java applications](https://github.com/heroku/heroku-buildpack-java) as described [here](https://developer.ibm.com/wasdev/docs/deploying-bluemix-liberty-maven-plug/).
 
 The sample project which will be used is hosted on [GitHub](https://github.com/cokeSchlumpf/liberty-maven-bluemix-sample). It's a simple application which exposes a JAX-RS WebService to flip a coin:
