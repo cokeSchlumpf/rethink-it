@@ -587,6 +587,10 @@ hr {
   padding-bottom: 60px;
   border-bottom: 1px solid #ececec; }
 
+.post:last-child {
+  border-bottom: none;
+}
+
 .post img {
   max-width: 100%;
   height: auto; }
