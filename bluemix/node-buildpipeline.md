@@ -27,4 +27,4 @@ npm install
 
 Just adjust the versions in the exported environment variables in the beginning and you're done.
 
-![Build Job configuration](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/images/2016-06-02_DeliveryPipeline.png)
+![Build Job configuration](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-06-02_DeliveryPipeline.png)
