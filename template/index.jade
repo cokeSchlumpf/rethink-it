@@ -13,7 +13,7 @@ div.wrapper
         | by&nbsp;
         strong= blog.owner.name
       p.address
-        | = blog.owner.location
+        = blog.owner.location
       p
         a(href="http://#{blog.owner.url}" title="blog.owner.name")= blog.owner.url
 
@@ -26,6 +26,6 @@ div.wrapper
   footer.main-footer
     .container.clearfix
       p
-        | All content copyright #[a(href=blog.owner.url)= blog.owner.name] 2016. All rights reserved.
+        | All content copyright #[a(href="http://#{blog.owner.url}")= blog.owner.name] 2016. All rights reserved.
       p
         | Proudly published with gh-blog. Theme designed by #[a(href="http://rriegger.com/") Raphael Riegger].
