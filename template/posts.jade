@@ -1,4 +1,4 @@
-each post in posts
+each post in posts.posts
   article.post
     h2
       a(href=post.link title=post.title)= post.title
@@ -8,3 +8,14 @@ each post in posts
     div.markdown-body
       != post.contentSnippet
       a(href=post.link title=post.title) Read more &raquo;
+
+div.pagination
+  nav
+    if posts.page > 1
+      a.newer(href="#{blog.baseUrl}/#{blog.user}/#{blog.repo}/#{posts.page - 1}") &lt;&lt;
+
+    p.counter
+      | Page #{posts.page} of #{posts.pages}
+
+    if posts.page < posts.pages
+      a.older(href="#{blog.baseUrl}/#{blog.user}/#{blog.repo}/#{posts.page + 1}") &gt;&gt;
