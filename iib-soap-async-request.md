@@ -1,4 +1,4 @@
-# Howto: IBM Integration Bus' SOAPAsyncRequest node by example
+# Howto: IBM Integration Bus' SOAP Async Request node by example
 
 In my current project I'm using the SOAPAsyncRequest Node to call a backend WebService. I was struggling a few hours to find out how I could transfer user context data from the request to the response flow.
 
