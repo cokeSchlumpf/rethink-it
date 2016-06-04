@@ -8,6 +8,6 @@ After a few days of thinking (and of course hacking) how to keep blogging as sim
 
 ![Build Job configuration](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-06-03_gh-blog.png)
 
-Thanks to a lot of great open-source developers it just took me a few hours to put together a new running platform. It's now published on IBM Bluemix and can be used by everyone there or by deploying an own instance. Find out more about gh-blog on its [GutHub repository](https://github.com/cokeSchlumpf/gh-blog).
+Thanks to a lot of great open-source developers it just took me a few hours to put together a new running platform. It's now published on IBM Bluemix and can be used by everyone there or by deploying an own instance. Find out more about gh-blog on its [GitHub repository](https://github.com/cokeSchlumpf/gh-blog).
 
-Feedback and suggestions for further improvements are appreciated :)
+Feedback and suggestions for further improvements are appreciated.
