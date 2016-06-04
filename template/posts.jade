@@ -12,7 +12,7 @@ each post in posts.posts
 div.pagination
   nav
     if posts.page > 1
-      a.newer(href="#{blog.baseUrl}/#{blog.user}/#{blog.repo}/#{posts.page - 1}") &lt;&lt;
+      a.newer(href="#{blog.baseUrl}/blogs/#{blog.user}/#{blog.repo}/history/#{posts.page - 1}") &lt;&lt;
 
     p.counter
       | Page #{posts.page} of #{posts.pages}
