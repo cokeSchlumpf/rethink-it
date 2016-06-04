@@ -18,4 +18,4 @@ div.pagination
       | Page #{posts.page} of #{posts.pages}
 
     if posts.page < posts.pages
-      a.older(href="#{blog.baseUrl}/blogs/#{blog.user}/#{blog.repo}/#{posts.page + 1}") &gt;&gt;
+      a.older(href="#{blog.baseUrl}/blogs/#{blog.user}/#{blog.repo}/history/#{posts.page + 1}") &gt;&gt;
