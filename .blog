@@ -1,4 +1,7 @@
 {
   "title": "reTHINKit",
-  "twitter": "cokeSchlumpf"
+  "twitter": "cokeSchlumpf",
+  "staticTitles": {
+    "about": "About me"
+  }
 }
