@@ -4,7 +4,7 @@ About one or two years ago I started a small blog on [ghost.org](https://ghost.o
 
 ---
 
-After a few days of thinking (and of course hacking) how to keep blogging as simple as possible without putting a lot of effort in the creation of a new platform I came up with a very simple solution: [gh-blog](https://github.com/cokeSchlumpf/gh-blog) is a simple view layer for a GitHub repository containing the data and templates of a blog. It also leverages GitHub's Markdown rendering.
+After a few days of thinking (and of course hacking) about how to keep blogging as simple as possible without putting a lot of effort in the creation of a new platform I came up with a very simple solution: [gh-blog](https://github.com/cokeSchlumpf/gh-blog) is a simple view layer for a GitHub repository containing the data and templates of a blog. It also leverages GitHub's Markdown rendering.
 
 ![Build Job configuration](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-06-03_gh-blog.png)
 
