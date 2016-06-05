@@ -1,4 +1,4 @@
-# Publishing made simple with gh-blog
+# Publishing blogs made simple with gh-blog
 
 About one or two years ago I started a small blog on [ghost.org](https://ghost.org). I really loved the simple interface and editing my posts with plain Markdown. After Ghost was now raising its prices and is focusing more on professional and regular bloggers I decided to write my own little blogging platform.
 
