@@ -12,7 +12,7 @@ To get the version information of a running RTC the following request can be use
 curl \
   -H "Accept: text/plain" \
   -u ${USERNAME}:${PASSWORD} \
-  https://${HOSTNAME}/${INSTANCE_PATH}/service/com.ibm.team.repository.service.internal.IProductRegistryRestService/allProductInfo
+  https://${HOSTNAME}/${CCM_PATH}/service/com.ibm.team.repository.service.internal.IProductRegistryRestService/allProductInfo
 ```
 
 The response will be something like:
