@@ -1,10 +1,10 @@
-# Publishing made simple with gh-blog
+# Publishing blogs made simple with gh-blog
 
 About one or two years ago I started a small blog on [ghost.org](https://ghost.org). I really loved the simple interface and editing my posts with plain Markdown. After Ghost was now raising its prices and is focusing more on professional and regular bloggers I decided to write my own little blogging platform.
 
 ---
 
-After a few days of thinking (and of course hacking) how to keep blogging as simple as possible without putting a lot of effort in the creation of a new platform I came up with a very simple solution: [gh-blog](https://github.com/cokeSchlumpf/gh-blog) is a simple view layer for a GitHub repository containing the data and templates of a blog. It also leverages GitHub's Markdown rendering.
+After a few days of thinking (and of course hacking) about how to keep blogging as simple as possible without putting a lot of effort in the creation of a new platform I came up with a very simple solution: [gh-blog](https://github.com/cokeSchlumpf/gh-blog) is a simple view layer for a GitHub repository containing the data and templates of a blog. It also leverages GitHub's Markdown rendering.
 
 ![Build Job configuration](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-06-03_gh-blog.png)
 
