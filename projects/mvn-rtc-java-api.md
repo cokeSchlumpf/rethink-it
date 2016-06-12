@@ -4,9 +4,7 @@ On [github](https://github.com/cokeSchlumpf/mvn-rtc-java-api) I just pushed a sm
 
 ---
 
-## How does it work?
-
-[Tiago Moura's](https://www.ibm.com/developerworks/community/blogs/cbe857dd-5392-4111-b0ea-6827c54f2e66/entry/setting_up_rtc_java_plain_api_dev_enviroment_with_maven_and_eclipse?lang=en) blog post on IBM developerWorks explains two options to integrate RTC Client Java API's dependencies with Maven:
+**How does it work? *** [Tiago Moura's](https://www.ibm.com/developerworks/community/blogs/cbe857dd-5392-4111-b0ea-6827c54f2e66/entry/setting_up_rtc_java_plain_api_dev_enviroment_with_maven_and_eclipse?lang=en) blog post on IBM developerWorks explains two options to integrate RTC Client Java API's dependencies with Maven:
 
 * Install the libs into the local Maven repository `~/.m2/repository` or
 * install them in a company managed repository
