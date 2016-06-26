@@ -28,10 +28,14 @@ The first step is to create a Node-RED application on Bluemix. Detailed instruct
 
 When the project is created two additional dependencies (`"node-red-react": " ~0.0.1"`, `"lodash": "~4.13.1"`) are added to `package.json`. To make them available in Node-RED's global context `bluemix-settings.js` file needs to be edited:
 
-```
-functionGlobalContext: {
-  "lodash": require("lodash"),
-  "ReactRED": require("node-red-react")
+```javascript
+{
+  // ...
+  functionGlobalContext: {
+    "lodash": require("lodash"),
+    "ReactRED": require("node-red-react")
+  }
+  // ...
 }
 ```
 
