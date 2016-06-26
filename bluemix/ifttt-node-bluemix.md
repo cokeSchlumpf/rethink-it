@@ -1,6 +1,6 @@
-# Building a home automation solution with Hue, IFTTT and NodeRED on Bluemix in 15 Minutes
+# Building a home automation solution with Hue, IFTTT and Node-RED on Bluemix in 15 Minutes
 
-Philips Hue is a lightning system which is enabled to be used as an IoT device. This tutorial explains how the state of the Philips Hue lights is controlled by complex rules based on location data received from a mobile device and sunrise/ sunset information from a weather service. You will learn how to build an easy extendable home automation solution in just a view minutes leveraging free available tools like IFTTT, NodeRED and IBM Bluemix.
+Philips Hue is a lightning system which is enabled to be used as an IoT device. This tutorial explains how the state of the Philips Hue lights is controlled by complex rules based on location data received from a mobile device and sunrise/ sunset information from a weather service. You will learn how to build an easy extendable home automation solution in just a view minutes leveraging free available tools like IFTTT, Node-RED and IBM Bluemix.
 
 ---
 
@@ -11,7 +11,7 @@ The goal of the home automation solution is to turn on/ off the lights based on 
 * It is dark outside (between sunset and sunrise) *AND* the resident is not at home *AND* it's before 11pm
 * It is dark outside *AND* the resident is at home (and has not turned of the lights manually)
 
-This goal will be achieved by utilizing channels available on IFTTT to control the Hue lights, gathering location data from the resident's mobile device as well as weather data. Since IFTTT is not able to realize complex logical relations between channels it will be connected via the IFTTT Maker channel to a NodeRED flow running on Bluemix which implements the rules defined above.
+This goal will be achieved by utilizing channels available on IFTTT to control the Hue lights, gathering location data from the resident's mobile device as well as weather data. Since IFTTT is not able to realize complex logical relations between channels it will be connected via the IFTTT Maker channel to a Node-RED flow running on Bluemix which implements the rules defined above.
 
 ## Prerequisites
 
