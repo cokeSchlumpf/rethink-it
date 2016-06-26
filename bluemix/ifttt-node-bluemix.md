@@ -78,10 +78,6 @@ The final step is to create the Node-RED flow which will integrate our devices w
 * `Timer` inject node: Triggers an event every 5 minutes.
 * `ITTT Maker` http request node: Calls the Maker urls on IFTTT `https://maker.ifttt.com/trigger/{{{payload.triggerWithValue}}}/with/key/${maker-key}`
 
-See pictures below for detailed configuration of these nodes.
-
-__ SLIDESHOW ___
-
 The first function node `prepare payload` transforms the message to a timer event which is similar as the input of the Maker calls which will be send from the http input node:
 
 ```javascript
