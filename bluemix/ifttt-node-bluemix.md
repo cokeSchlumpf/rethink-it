@@ -26,14 +26,14 @@ To follow the steps below one should have:
 
 The first step is to create a Node-RED application on Bluemix. Detailed instructions for this can be found [here](https://developer.ibm.com/recipes/tutorials/creating-a-nodered-application-on-bluemix/).
 
-When the project is created two additional dependencies (`"node-red-react": " ~0.0.1"`, `"lodash": "~4.13.1"`) are added to `package.json`. To make them available in Node-RED's global context `bluemix-settings.js` file needs to be edited:
+When the project is created two additional dependencies (`"node-red-contrib-react": " ~0.0.1"`, `"lodash": "~4.13.1"`) are added to `package.json`. To make them available in Node-RED's global context `bluemix-settings.js` file needs to be edited:
 
 ```javascript
 {
   // ...
   functionGlobalContext: {
     "lodash": require("lodash"),
-    "ReactRED": require("node-red-react")
+    "ReactRED": require("node-red-contrib-react")
   }
   // ...
 }
@@ -99,7 +99,7 @@ return _.assign({}, msg, {
 });
 ```
 
-Within the `rules` node the rules are defined with help of `node-red-react` (For detailed information visit [GitHub](https://github.com/cokeSchlumpf/node-red-react)):
+Within the `rules` node the rules are defined with help of `node-red-contrib-react` (For detailed information visit [GitHub](https://github.com/cokeSchlumpf/node-red-contrib-react)):
 
 ```javascript
 var
@@ -146,4 +146,4 @@ That's it. After deploying the flow to node red the Hue lights are turned on and
 
 This short example shows how easy one can connect several devices via standardized services. Leveraging these services combined with some smart libraries makes it very simple to implement complex relationships between the state of several devices.
 
-The shown solution can be easily extended by additional devices and events from other services. Since node-red-react hides the complex logic to react to events in the right way rules can be changed and extended in just a few seconds.
+The shown solution can be easily extended by additional devices and events from other services. Since node-red-contrib-react hides the complex logic to react to events in the right way rules can be changed and extended in just a few seconds.
