@@ -11,7 +11,7 @@ Daux.io is easy to install and easy to use. Nevertheless I was thinking about a 
 The docker image including a running Daux.io installation and the WebHook is available on DockerHub:
 
 ```
-docker pull cokeschlumpf/daux.io:0.1.0
+docker pull cokeschlumpf/daux.io:0.2.0
 ```
 
 The sources are also published on [GitHub](http://github.com/cokeschlumpf/daux.io).
@@ -23,13 +23,13 @@ Following I'll explain step by step how to setup the environment for this docume
 First, clone the image from DockerHub:
 
 ```
-docker pull cokeschlumpf/daux.io:0.1.0
+docker pull cokeschlumpf/daux.io:0.2.0
 ```
 
 To make the image available on your organizations Bluemix instance, tag the image with your organizations credentials:
 
 ```
-docker tag cokeschlumpf/daux.io:0.1.0 registry.ng.bluemix.net/<your_namespace>/daux.io
+docker tag cokeschlumpf/daux.io:0.2.0 registry.ng.bluemix.net/<your_namespace>/daux.io
 ```
 
 Afterwards push the image to your Bluemix private repository:
