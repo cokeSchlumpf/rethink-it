@@ -28,7 +28,7 @@ The quote from Gardner is kind of provocative, true. Actually I think for the ne
 
 ![Slide](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-10_Microservices/005.png)
 
-When we're talking about Microservice architectures we aren't actually speaking about fency technical stuff which is absolutely modern. In fact: We're talking about plain old topics. We really have to rethink our nicely designed object-oriented integrated JEE architectures and split them down to the basics: As said before, splitted, independent stateful services will be the future. But it's not only cutting down our current application landscapes into smaller services and put some "great" HTTP Rest communication between them, it's about designing them in a well mannered fashion to fulfill "one thing" and get them working together easily without that they must know each other. Unix' piping still is a great concept - But how does this concept look like on our cloud platforms and cloud-ready architectures?
+When we're talking about Microservice architectures we aren't actually speaking about fency technical stuff which is absolutely modern. In fact: We're talking about plain old topics. We really have to rethink our nicely designed object-oriented integrated JEE architectures and split them down to the basics: As said before, splitted, independent stateless services will be the future. But it's not only cutting down our current application landscapes into smaller services and put some "great" HTTP Rest communication between them, it's about designing them in a well mannered fashion to fulfill "one thing" and get them working together easily without that they must know each other. Unix' piping still is a great concept - But how does this concept look like on our cloud platforms and cloud-ready architectures?
 
 ![Slide](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-10_Microservices/006.png)
 
@@ -87,7 +87,7 @@ To summarize: There are a lot of topics to speak about when it comes to such kin
 
 ## Let's develop resilient Microservices on Bluemix
 
-![Slide](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-10_Microservices/010.jpeg)
+![Slide](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-10_Microservices/010.png)
 
 Basic concepts of Microservices can easily be tested and implemented using totally simple use cases like the above mentioned calculation service which uses an addition- and a subtraction-microservice to calculate complex terms. Based on that example one could play with fail-over scenarios, auto-scaling, DevOps-concepts like zero-downtime deployments, canary releasing, consumer driven test specifications, etc.
 
@@ -97,4 +97,4 @@ On my GitHub account I also provide some sources for the examples:
 * A simple addition service which uses IBM Bluemix Service Registry to register itself: https://github.com/cokeSchlumpf/wellnr-calc-sum-service
 * A simple calculation service which uses IBM Bluemix Service Registry to discover the addition service and utilizes Netflix Hystrix for resilient communication: https://github.com/cokeSchlumpf/wellnr-calc-service
 
-![Slide](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-10_Microservices/011.jpeg)
+![Slide](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2016-10_Microservices/011.png)
