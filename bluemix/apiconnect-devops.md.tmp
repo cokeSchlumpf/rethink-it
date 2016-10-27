@@ -1,0 +1,51 @@
+# Doing DevOps with IBM API Connect on Bluemix
+
+# Input to pipeline
+
+* API Connect Endpoint
+* API+Product File
+* Katalog
+
+```bash
+apic login -u ${BLUEMIX_USER} -p ${BLUEMIX_PASSWORD} -s ${API_CONNECT_ENDPOINT}
+```
+
+Where `${API_CONNECT_ENDPOINT}` is
+
+* `eu.apiconnect.ibmcloud.com` on Bluemix Public Region [United Kingdom](console.eu-gb.bluemix.net)
+* `us.apiconnect.ibmcloud.com` on Bluemix Public Region [US South](console.ng.bluemix.net)
+
+```bash
+# List all catalogs
+apic catalogs -s eu.apiconnect.ibmcloud.com -O
+
+# Get information for a specific catalog
+apic catalogs:get gcloud-wpa-catalog -s us.apiconnect.ibmcloud.com -o infomichaelwellnerde-dev
+
+# Create catalog
+apic catalogs:create production -s us.apiconnect.ibmcloud.com -o infomichaelwellnerde-dev
+```
+
+## Deploy a version to a catalog
+
+## Fix a version on a catalog.
+
+
+## Semantic versioning
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+MAJOR version when you make incompatible API changes,
+MINOR version when you add functionality in a backwards-compatible manner, and
+PATCH version when you make backwards-compatible bug fixes.
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+## Ablauf für DevOps Script
+
+```bash
+# Prüfen ob Katalog existiert, wenn nicht anlegen.
+
+# Prüfen ob Katalog in der gegebenen MINOR version vorhanden ist
+  # Nein
+  Produkt publishen
+```
