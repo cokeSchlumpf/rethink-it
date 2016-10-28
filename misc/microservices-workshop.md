@@ -1,4 +1,4 @@
-# What's the buzz about Microservices
+# What's the buzz about Microservices?
 
 Last week I did a half-day workshop about Microservices. It wasn't an introduction to noobs, but I also wouldn't call it an advanced workshop due to the short time-frame. 4 hours are not a very long time to discover topics about Microservices. But anyhow I got it managed. Following you find my transcript and some comments and notes.
 
