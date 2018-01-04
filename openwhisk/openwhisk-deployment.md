@@ -1,4 +1,4 @@
-# Deployment of OpenWhisk projects with multiple actions
+# Deployment of OpenWhisk projects with many actions
 
 In the past few months I was working on some [Apache OpenWhisk](https://openwhisk.apache.org/) projects for my own. In this blog post I'd like to share the experience I made with OpenWhisk when it comes to deployment of larger projects with more than just a few actions.
 
