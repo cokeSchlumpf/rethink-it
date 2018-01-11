@@ -115,7 +115,7 @@ $ python -m SimpleHTTPServer
 
 This will provide you a sample web page with a chat window on [localhost:8000/index.ocf.html](http://localhost:8000/index.ocf.html). This [Web ChatClient UI](https://github.com/cokeSchlumpf/web-chatclient) can also be integrated in any existing UI.
 
-![A simple Chat Window connected to OpenWhisk Chatbot Framework](./chat-window.png)
+![A simple Chat Window connected to OpenWhisk Chatbot Framework](../images/2017-01-11_chat-window.png)
 
 ## Extend with IBM Watson Conversation Service
 
@@ -132,11 +132,11 @@ or if you prefer a video:
 
 To cotinue integrating a Watson Conversation bot into OpenWhisk Chatbot framework we'll use the default example "Car Dashboard" you can find on every newly created workspace; but you can use any other conversation you have built.
 
-![A Watson Conversation Service workspace](./wcs-screenshot.png)
+![A Watson Conversation Service workspace](../images/2017-01-11_wcs-screenshot.png)
 
 To configure your workspace within OpenWhisk Chatbot Framework, we need the values available on the `Deploy` page of your Watson Conversation workspace:
 
-![A Watson Conversation Service workspace credentials](./wcs-credentials.png)
+![A Watson Conversation Service workspace credentials](../images/2017-01-11_wcs-credentials.png)
 
 Note the following values:
 
@@ -193,7 +193,7 @@ ok: created binding sample-bot
 
 Using the chat client, we can now do a chat with the conversation created within Watson Conversation Service. 
 
-![A simple Chat Window connected to OpenWhisk Chatbot Framework](./chat-window-wcs.png)
+![A simple Chat Window connected to OpenWhisk Chatbot Framework](../images/2017-01-11_chat-window-wcs.png)
 
 The OpenWhisk Chatbot Framework and the chat client are already handling the conversations context, the state, of the conversation; thus we've created a fully functional simple chat bot with user interface without any coding yet; And, as we are using OpenWhisk Chatbot Framework, we can easily extend the functionality of the bot, e.g.
 
