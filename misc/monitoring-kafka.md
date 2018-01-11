@@ -8,23 +8,24 @@ Todays big data analytics and streaming applications often rely on [Apacha Kafka
 
 The following values can be obtained form Kafka via JMS (source: [server density](https://blog.serverdensity.com/how-to-monitor-kafka/)):
 
-|Metric|Comments|Suggested Alert|
-|--- |--- |--- |
-|UnderReplicatedPartitions|kafka.server: type=ReplicaManager, name=UnderReplicatedPartitions – Number of under-replicated partitions.|When UnderReplicatedPartitions > 0.|
-|OfflinePartitionsCount|kafka.controller: type=KafkaController, name=OfflinePartitionsCount – Number of partitions without an active leader, therefore not readable nor writeable.|When OfflinePartitionsCount > 0.|
-|ActiveControllerCount|kafka.controller: type=KafkaController, name=ActiveControllerCount – Number of active controller brokers.|When ActiveControllerCount != 1.|
-|MessagesInPerSec|kafka.server: type=BrokerTopicMetrics, name=MessagesInPerSec – Incoming messages per second.|None|
-|BytesInPerSec / BytesOutPerSec|kafka.server: type=BrokerTopicMetrics, name=BytesInPerSec – kafka.server: type=BrokerTopicMetrics, name=BytesOutPerSec – Incoming/outgoing bytes per second.|None|
-|RequestsPerSec|kafka.network: type=RequestMetrics, name=RequestsPerSec, request={Produce|FetchConsumer|FetchFollower} – Number of requests per second.|None|
-|TotalTimeMs|kafka.network: type=RequestMetrics, name=TotalTimeMs, request={Produce|FetchConsumer|FetchFollower} – Total time it takes to process a request. You can also monitor split times for QueueTimeMs, LocalTimeMs, RemoteTimeMs and RemoteTimeMs.|None|
-|UncleanLeaderElectionsPerSec|kafka.controller: type=ControllerStats, name=LeaderElectionRateAndTimeMs – Number of disputed leader elections rate.|When UncleanLeaderElectionsPerSec != 0.|
-|LogFlushRateAndTimeMs|kafka.log: type=LogFlushStats, name=LogFlushRateAndTimeMs – Asynchronous disk log flush and time in ms.|None|
-|UncleanLeaderElectionsPerSec|kafka.controller: type=ControllerStats, name=UncleanLeaderElectionsPerSec – Unclean leader election rate.|When UncleanLeaderElectionsPerSec != 0.|
-|PartitionCount|kafka.server: type=ReplicaManager, name=PartitionCount – Number of partitions on your system.|When PartitionCount != your_num_partitions.|
-|ISR shrink/expansion rate|kafka.server: type=ReplicaManager, name=IsrShrinksPerSec – kafka.server: type=ReplicaManager, name=IsrExpandsPerSec – When a broker goes down, ISR will shrink for some of the partitions. When that broker is up again, ISR will be expanded once the replicas have fully caught up.|IsrShrinksPerSec | IsrExpandsPerSec != 0.|
-|NetworkProcessorAvgIdlePercent|kafka.network: type=SocketServer, name=NetworkProcessorAvgIdlePercent – The average fraction of time the network processors are idle.|When NetworkProcessorAvgIdlePercent < 0.3.|
-|RequestHandlerAvgIdlePercent|kafka.server: type=KafkaRequestHandlerPool, name=RequestHandlerAvgIdlePercent – The average fraction of time the request handler threads are idle.|When RequestHandlerAvgIdlePercent < 0.3.|
-|Heap Memory Usage|Memory allocated dynamically by the Java process, Zookeeper in this case.|None|
+|Metric|Comments|
+|--- |--- |
+|UnderReplicatedPartitions|kafka.server: type=ReplicaManager, name=UnderReplicatedPartitions – Number of under-replicated partitions.|
+|OfflinePartitionsCount|kafka.controller: type=KafkaController, name=OfflinePartitionsCount – Number of partitions without an active leader, therefore not readable nor writeable.|
+|ActiveControllerCount|kafka.controller: type=KafkaController, name=ActiveControllerCount – Number of active controller brokers.|
+|MessagesInPerSec|kafka.server: type=BrokerTopicMetrics, name=MessagesInPerSec – Incoming messages per second.|
+|BytesInPerSec / BytesOutPerSec|kafka.server: type=BrokerTopicMetrics, name=BytesInPerSec – kafka.server: type=BrokerTopicMetrics, name=BytesOutPerSec – Incoming/outgoing bytes per second.|
+|RequestsPerSec|kafka.network: type=RequestMetrics, name=RequestsPerSec, request={Produce|FetchConsumer|FetchFollower} – Number of requests per second.|
+|TotalTimeMs|kafka.network: type=RequestMetrics, name=TotalTimeMs, request={Produce|FetchConsumer|FetchFollower} – Total time it takes to process a request. You can also monitor split times for QueueTimeMs, LocalTimeMs, RemoteTimeMs and RemoteTimeMs.|
+|UncleanLeaderElectionsPerSec|kafka.controller: type=ControllerStats, name=LeaderElectionRateAndTimeMs – Number of disputed leader elections rate.|
+|LogFlushRateAndTimeMs|kafka.log: type=LogFlushStats, name=LogFlushRateAndTimeMs – Asynchronous disk log flush and time in ms.|
+|UncleanLeaderElectionsPerSec|kafka.controller: type=ControllerStats, name=UncleanLeaderElectionsPerSec – Unclean leader election rate.|
+|PartitionCount|kafka.server: type=ReplicaManager, name=PartitionCount – Number of partitions on your system.|
+|ISR shrink/expansion rate|kafka.server: type=ReplicaManager, name=IsrShrinksPerSec – kafka.server: type=ReplicaManager, name=IsrExpandsPerSec – When a broker goes down, ISR will shrink for some of the partitions. When that broker is up again, ISR will be expanded once the replicas have fully caught up.|
+|NetworkProcessorAvgIdlePercent|kafka.network: type=SocketServer, name=NetworkProcessorAvgIdlePercent – The average fraction of time the network processors are idle.|
+|RequestHandlerAvgIdlePercent|kafka.server: type=KafkaRequestHandlerPool, name=RequestHandlerAvgIdlePercent – The average fraction of time the request handler threads are idle.|
+|Heap Memory Usage|Memory allocated dynamically by the Java process, Zookeeper in this case.|
+
 
 To provide these value via Jolokia, execute the following steps:
 
