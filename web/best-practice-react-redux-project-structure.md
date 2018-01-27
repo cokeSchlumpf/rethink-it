@@ -2,6 +2,8 @@
 
 When developing frontends I personally love to work with [React](https://reactjs.org/) and [Redux](https://redux.js.org/) due to its functional paradigms: You can easily develop, compose and test web components - Wondeful. But when developing larger projects one have to think about a good structure of components and code artifacts. When it comes to sharing components and (redux-)logic between several project a good composition is keen.
 
+![Best Practice: How I structure my React/ Redux projects](https://raw.githubusercontent.com/cokeSchlumpf/rethink-it/master/images/2018-01-26_reactredux.png)
+
 In the following I want to give you insights how I started structuring my projects almost a year ago from now and I still stick to this structure as I made good experience with it throughout the last year.
 
 ---
