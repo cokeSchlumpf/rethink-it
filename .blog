@@ -13,5 +13,5 @@
     "linkedin": "https://www.linkedin.com/in/michael-wellner-43100566"
   },
   "analyticsId": "foo bar",
-  "disqusId": null
+  "disqusId": "disable"
 }
