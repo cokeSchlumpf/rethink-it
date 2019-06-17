@@ -6,6 +6,9 @@ When developing frontends I personally love to work with [React](https://reactjs
 
 In the following I want to give you insights how I started structuring my projects almost a year ago from now and I still stick to this structure as I made good experience with it throughout the last year.
 
+```topics
+web, misc
+```
 ---
 
 A good starting point to develop a React project is Facebook's [React Create App](https://github.com/facebook/create-react-app) it already gives you a good basic project structure and the most important tool integrations. If you don't know it - Have look into the well written docs.
