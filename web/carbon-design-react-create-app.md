@@ -1,4 +1,4 @@
-# Getting Started with Carbon Design and React App
+# Getting Started with Carbon Design and React Create App
 
 In this short post I'd like to describe the steps which are required to use the [Carbon Design System](https://www.carbondesignsystem.com/) within your React app, after you created it with [React Create App](https://github.com/facebook/create-react-app).
 
@@ -74,7 +74,7 @@ function App() {
 export default App;
 ```
 
-**Note:** The import of the `scss`-files is required only once in ypur project, thus if you create other react components in other files, you don't need to re-import `'carbon-components/scss/globals/scss/styles.scss';`; The root of your components, e.g. `App.js` is a good place for this import.
+**Note:** The import of the `scss`-files is required only once in ypur project, thus if you create other react components in other files, you don't need to re-import `carbon-components/scss/globals/scss/styles.scss`. The root of your components, e.g. `App.js` is a good place for this import.
 
 Finally we can start our initial app:
 
