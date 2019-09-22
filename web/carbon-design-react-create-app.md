@@ -42,8 +42,8 @@ function App() {
   return (
     <div className="App">
       <Header aria-label="IBM Platform Name">
-        <HeaderName href="#" prefix="Maquette">
-          Data Platform
+        <HeaderName href="#" prefix="Your">
+          App
         </HeaderName>
       </Header>
 
