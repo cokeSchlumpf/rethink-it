@@ -12,7 +12,7 @@ web, misc
 
 ---
 
-A good starting point to develop a React project is Facebook's [React Create App](https://github.com/facebook/create-react-app) it already gives you a good basic project structure and the most important tool integrations. If you don't know it - Have look into the well written docs.
+A good starting point to develop a React project is Facebook's [React Create App](https://github.com/facebook/create-react-app). It already gives you a good basic project structure and the most important tool integrations. If you don't know it - Have look into the well written docs.
 
 The initial project structure created by React Create App looks as follows:
 
@@ -196,7 +196,7 @@ Let's have a look into the files to see how the composition works:
     };
     ```
 
-    As you can see here, for me it's also best practice to use [Immutable JS](https://facebook.github.io/immutable-js/) for the store. Especially transitions in complex object structures are easier to handle with the API of Immutable JS (another gread framework from Facebook).
+    As you can see here, for me it's also best practice to use [Immutable JS](https://facebook.github.io/immutable-js/) for the store. Especially transitions in complex object structures are easier to handle with the API of Immutable JS (another great framework from Facebook).
 
 This is how the leaf redux directories are designed. As I said, all node-directories then just compose these leaf modules in a way that it doesn't matter how deep the tree might become:
 
