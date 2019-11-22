@@ -33,7 +33,7 @@ $ git add .
 $ git commit -am "Initial commit."
 ```
 
-## Some thoughts on Condas `environment.yaml`
+## Some thoughts on Condas environment.yaml
 
 As you see in the commands above we store our environment in a `environment.yaml` file. This would help other data scientists to execute the project on their machine as they could re-create the environment with `conda create -f environment.yaml`. It is also important to mention that you should export the environment with the `--no-builds`-flag, this excludes OS specific build-indicators, thus also data scientists on other operating systems can re-create the environment.
 
