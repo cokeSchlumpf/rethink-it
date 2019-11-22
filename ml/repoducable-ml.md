@@ -3,8 +3,9 @@
 Developing machine learning models in a reproducable, comprehensible way is keen for AI teams, especially in the context of large enterprises where many Data Scientists work together on projects and where also common software development standards are key for delivering quality into production. In this post I'll explain by example what are simple but quite helpfull components for a more standardized way to develop machine learning models. 
 
 ```topics
-ai, machine-learning
+ai,machine-learning
 ```
+
 ---
 
 The following example is based on the simple [Titanic Competion](https://www.kaggle.com/c/titanic/data) from Kaggle. To reproduce the example by yourself you need to fullfill the following requirements:
