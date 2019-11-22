@@ -4,7 +4,9 @@
   "postPerPage": 3,
   "description": "This is the personal blog of Michael Wellner. I'm an enthusiastic software engineer. I do and write about architecture, development and coaching.",
   "topics": [
+    "ai",
     "java",
+    "machine-learning",
     "web",
     "misc"
   ],
