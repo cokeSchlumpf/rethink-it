@@ -5,7 +5,6 @@ Developing machine learning models in a reproducable, comprehensible way is keen
 ```topics
 ai,machine-learning
 ```
-
 ---
 
 The following example is based on the simple [Titanic Competion](https://www.kaggle.com/c/titanic/data) from Kaggle. To reproduce the example by yourself you need to fullfill the following requirements:
